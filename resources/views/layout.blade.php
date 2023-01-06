@@ -20,7 +20,7 @@
             line-height: 1.6;
             color: #212529;
             text-align: left;
-            background-color: #f5f8fa;
+            background-color: #fbfbfc;
         }
 
         .navbar-laravel {

@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Session;
 use App\Models\User;
-use Hash;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
 {
@@ -79,7 +79,7 @@ class AuthController extends Controller
     public function dashboard()
     {
         if (Auth::check()) {
-            return view('dashboard');
+            return view('dashboard.index');
         }
 
         return redirect("login")->withSuccess('Opps! You do not have access');

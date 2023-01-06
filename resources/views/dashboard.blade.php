@@ -15,7 +15,7 @@
                         </div>
                         @endif
 
-                        Hai Selamat Datang
+                        Hai.. Selamat Datang
                     </div>
                 </div>
             </div>
